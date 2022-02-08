@@ -1,0 +1,16 @@
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.exe
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.deps.json
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.runtimeconfig.json
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.runtimeconfig.dev.json
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.dll
+D:\6 semester\Laboratory\PIS\HTTPClient\bin\Debug\netcoreapp3.1\HTTPClient.pdb
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.csproj.AssemblyReference.cache
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.Form1.resources
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.csproj.GenerateResource.cache
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.AssemblyInfoInputs.cache
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.AssemblyInfo.cs
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.csproj.CoreCompileInputs.cache
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.dll
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.pdb
+D:\6 semester\Laboratory\PIS\HTTPClient\obj\Debug\netcoreapp3.1\HTTPClient.genruntimeconfig.cache
