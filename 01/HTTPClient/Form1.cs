@@ -21,7 +21,7 @@ namespace HTTPClient
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Uri target = new Uri("https://localhost:5001/zei/sum");
+            Uri target = new Uri("http://localhost:44104/sum");
             WebRequest request = WebRequest.Create(target);
             string postData = "X=" + X.Text + "&Y=" + Y.Text;
             byte[] byteArray = Encoding.UTF8.GetBytes(postData);

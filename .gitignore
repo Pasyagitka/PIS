@@ -5,3 +5,17 @@ riderModule.iml
 /_ReSharper.Caches/
 *.doc
 *.docx
+/01/.vs/01
+/01/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
+/01/WebSockets/Properties
+/01/WebSockets/packages.config
+/01/WebSockets/Web.Debug.config
+/01/WebSockets/Web.Release.config
+*.csproj
+*.user
+/01/HTTPHandlers/Properties/AssemblyInfo.cs
+/01/HTTPHandlers/packages.config
+/01/HTTPHandlers/Web.Release.config
+/01/HTTPHandlers/Web.Debug.config
+*.sln
+/HTTPHandlers_/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1/tools/RoslynLatest
