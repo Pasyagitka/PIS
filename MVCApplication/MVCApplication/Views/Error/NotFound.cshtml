@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string uri = ViewBag.path;
+    string method = ViewBag.method;
+}
+
+<h2>Error</h2>
+<h2>@method: @uri не поддерживается</h2>
+<h6>@Html.ActionLink("Go Back To Home Page", "Index", "Dict")</h6>
