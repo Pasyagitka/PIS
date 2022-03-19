@@ -1,0 +1,7 @@
+﻿<div>
+    <p class="btn string-button">
+        @Model.name, @Model.number
+    </p>
+    @Html.ActionLink("e", "Update", "Dict", new { id = Model.id }, null)
+    @Html.ActionLink("x", "Delete", "Dict", new { id = Model.id }, null)
+</div>
