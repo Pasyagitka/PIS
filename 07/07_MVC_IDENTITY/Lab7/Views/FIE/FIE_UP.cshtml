@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "FIE_UP";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FIE_UP</title>
+</head>
+<body>
+    <h1>FIE_UP</h1>
+    <table>
+        <tr>
+            <td>Авторизация выполнена? </td>
+            <td>@(User.Identity.IsAuthenticated? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь </td>
+            <td>@(!String.IsNullOrEmpty(User.Identity.Name) ? User.Identity.Name : "--" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Administrator?  </td>
+            <td>@(User.IsInRole("Administrator")? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Employer? </td>
+            <td>@(User.IsInRole("Employer") ? "да":"нет" )</td>
+        </tr>
+    </table>
+
+    <div>
+        @Html.ActionLink("FIE/Index", "/Index", "FIE")<br />
+
+    </div>
+</body>
+</html>
+

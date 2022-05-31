@@ -1,0 +1,28 @@
+﻿@model MVCApplication.Models.Record
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm("AddSave", "Dict", FormMethod.Post)) 
+{    
+    <div class="form-horizontal">
+        <h4>Record</h4>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="add-field">
+                    <input type="text" name="record" placeholder="Фамилия, имя, отчество. Телефон" class="form-control">
+                </div>
+                <input type="submit" value="Create" class="btn add-button" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

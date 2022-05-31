@@ -1,0 +1,41 @@
+﻿
+@using Storage;
+@model List<Record>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; ;
+    List<Record> records = ViewBag.Telephones;
+}
+
+@section Header {
+    <div class="view">
+        header
+    </div>
+}
+
+
+@section Footer {
+    <div class="view">
+        footer
+    </div>
+}
+
+    <div>
+        <div class="list-container">
+            <h3>Добавить новую запись...</h3>
+            <table>
+                @foreach (Record record in records)
+                {
+                    <tr>
+                        <td>
+                            @{
+                                Html.RenderPartial("StringButton", record);
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div style="display: inline-block; gap: 10px;">
+            @Html.ActionLink("Добавить", "Add", "Dict", null, new { @class = "link btn add-button" })
+        </div>
+    </div>

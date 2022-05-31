@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "FIT_IS";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FIT_IS</title>
+</head>
+<body>
+    <h1>FIT_IS</h1>
+    <table>
+        <tr>
+            <td>Авторизация выполнена? </td>
+            <td>@(User.Identity.IsAuthenticated? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь </td>
+            <td>@(!String.IsNullOrEmpty(User.Identity.Name) ? User.Identity.Name : "--" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Administrator?  </td>
+            <td>@(User.IsInRole("Administrator")? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Employer? </td>
+            <td>@(User.IsInRole("Employer") ? "да":"нет" )</td>
+        </tr>
+    </table>
+
+    <div>
+        @Html.ActionLink("FIT/Index", "/Index", "FIT")<br />
+
+    </div>
+</body>
+</html>
+

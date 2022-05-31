@@ -1,0 +1,15 @@
+https://localhost:44348/MResearch/M01/1
+https://localhost:44348/MResearch/M01
+https://localhost:44348/MResearch/
+https://localhost:44348/
+https://localhost:44348/V3/MResearch/X/M01
+
+https://localhost:44348/V2
+https://localhost:44348/V2/MResearch
+https://localhost:44348/V2/MResearch/M02
+https://localhost:44348/MResearch/M02
+https://localhost:44348/V3/MResearch/X/M02
+
+https://localhost:44348/V3
+https://localhost:44348/V3/MResearch/X/
+https://localhost:44348/V3/MResearch/X/M03

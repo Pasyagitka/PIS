@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+ 
+
+<p><a asp-area="" asp-controller="FIT" asp-action="Index">FIT/Index</a></p>
+<p><a asp-area="" asp-controller="FLT" asp-action="Index">FLT/Index</a></p>
+<p><a asp-area="" asp-controller="FLE" asp-action="Index">FLE/Index</a></p>
+@if (User.IsInRole("Administrator"))
+{
+    <p><a asp-area="" asp-controller="BSTU" asp-action="Config">BSTU/Config</a></p>
+}
