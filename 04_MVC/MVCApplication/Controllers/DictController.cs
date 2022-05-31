@@ -8,12 +8,12 @@ namespace MVCApplication.Controllers
 {
     public class DictController : Controller
     {
-        private Models.Phonebook _telephoneDictionary = new Models.Phonebook();
+        private Models.Phonebook _phonebook = new Models.Phonebook();
 
         [HttpGet]
         public ActionResult Index()
         {
-            ViewBag.Telephones = _telephoneDictionary.GetAllOrdered();
+            ViewBag.Telephones = _phonebook.GetAllOrdered();
             return View();
         }
 
@@ -27,8 +27,8 @@ namespace MVCApplication.Controllers
         public RedirectResult AddSave(string record, string phone)
         {
             string name = record ?? "default";
-            _telephoneDictionary.Insert(name, phone);
-            ViewBag.Telephones = _telephoneDictionary.GetAllOrdered();
+            _phonebook.Insert(name, (phone.Length >= 12) ? phone.Substring(0, 12): phone) ;
+            ViewBag.Telephones = _phonebook.GetAllOrdered();
             return Redirect("~/Dict/Index");
         }
 
@@ -36,15 +36,15 @@ namespace MVCApplication.Controllers
         [Route("/update/{id:int}")]
         public ActionResult Update(int id)
         {
-            ViewBag.Telephones = _telephoneDictionary.Get(id);
+            ViewBag.Telephones = _phonebook.Get(id);
             return View();
         }
 
         [HttpPost]
         public RedirectResult UpdateSave(int id, string record, string phone)
         {
-            _telephoneDictionary.Update(id, record ?? "default", phone);
-            ViewBag.Telephones = _telephoneDictionary.GetAllOrdered();
+            _phonebook.Update(id, record ?? "default", phone);
+            ViewBag.Telephones = _phonebook.GetAllOrdered();
             return Redirect("~/Dict/Index");
         }
 
@@ -52,15 +52,15 @@ namespace MVCApplication.Controllers
         [Route("/delete/{id:int}")]
         public ActionResult Delete(int id)
         {
-            ViewBag.Telephones = _telephoneDictionary.Get(id);
+            ViewBag.Telephones = _phonebook.Get(id);
             return View();
         }
 
         [HttpPost]
         public RedirectResult DeleteSave(int id)
         {
-            _telephoneDictionary.Delete(id);
-            ViewBag.Telephones = _telephoneDictionary.GetAllOrdered();
+            _phonebook.Delete(id);
+            ViewBag.Telephones = _phonebook.GetAllOrdered();
             return Redirect("~/Dict/Index");
         }
     }

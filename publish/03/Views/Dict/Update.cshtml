@@ -1,0 +1,29 @@
+﻿@using MVCApplication.Models;
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Record record = ViewBag.Telephones;
+}
+
+<h2>Update</h2>
+
+@using (Html.BeginForm("UpdateSave", "Dict", FormMethod.Post))
+{
+    <div>
+        <h4>Record</h4>
+        <hr />
+        <div class="form-group">
+            <input name="id" type="hidden" value="@record.id" />
+            <div class="add-field">
+                <input type="text" name="record" placeholder="Новые данные..." class="form-control add-record-input" value="@record.name, @record.number">
+            </div>
+            <br />
+            <input type="submit" value="Save" class="btn change-button" />
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

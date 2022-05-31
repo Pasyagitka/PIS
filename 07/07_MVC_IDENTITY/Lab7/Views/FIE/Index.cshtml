@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>FIE</h1>
+    <table>
+        <tr>
+            <td>Авторизация выполнена? </td>
+            <td>@(User.Identity.IsAuthenticated? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь </td>
+            <td>@(!String.IsNullOrEmpty(User.Identity.Name) ? User.Identity.Name : "--" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Administrator?  </td>
+            <td>@(User.IsInRole("Administrator")? "да":"нет" )</td>
+        </tr>
+        <tr>
+            <td>Текущий пользователь имеет роль Employer? </td>
+            <td>@(User.IsInRole("Employer") ? "да":"нет" )</td>
+        </tr>
+    </table>
+
+    <div>
+        @if (User.IsInRole("Employer"))
+        {
+            @Html.ActionLink("FIE/FIE_TM", "/FIE_TM", "FIE")<br />
+            @Html.ActionLink("FIE/FIE_UR", "/FIE_UR", "FIE")<br />
+            @Html.ActionLink("FIE/FIE_UP", "/FIE_UP", "FIE")<br />
+        }
+        @Html.ActionLink("BSTU/Index", "/Index", "BSTU")<br />
+
+    </div>
+</body>
+</html>
+
